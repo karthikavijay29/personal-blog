@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cake Blog</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      background-image: url("https://marketplace.canva.com/EAGGOdr2V5Q/1/0/1131w/canva-brown-and-gray-watercolor-pastry-illustration-blank-page-a4-document-v0xrDbOoJRc.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      color: #333;
+    }
+
+    .header {
+      background-color: #ffebcc;
+      padding: 30px;
+      text-align: center;
+      color: #333;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      font-family: 'Dancing Script', cursive;
+      margin-bottom: 5px;
+    }
+
+    .header p {
+      font-size: 1.2em;
+      color: #666;
+    }
+
+    .main {
+      padding: 40px;
+    }
+
+    .blog-posts {
+      margin-bottom: 60px;
+    }
+
+    .blog-posts h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 2em;
+      color: #ff6600;
+    }
+
+    .posts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .post {
+      width: 30%;
+      margin-bottom: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .post:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .post img {
+      border-radius: 10px 10px 0 0;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .post h3 {
+      padding: 15px 0;
+      font-size: 1.4em;
+      color: #ff6600;
+    }
+
+    .post p {
+      padding: 0 20px 20px;
+      color: #555;
+    }
+
+    .about-me {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .about-me h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2em;
+      color: #ff6600;
+    }
+
+    .about-me img {
+      border-radius: 50%;
+      margin-bottom: 20px;
+      max-width: 300px;
+      height: auto;
+    }
+
+    .about-me p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    .footer {
+      background-color: #ffebcc;
+      padding: 30px;
+      text-align: center;
+      margin-top: 50px;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer p {
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    .footer a {
+      color: #ff6600;
+      font-size: 1.8em;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #ff3300;
+    }
+
+    /* Responsive design */
+    @media screen and (max-width: 768px) {
+      .post {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+  <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/022/511/191/non_2x/cake-shop-icon-style-vector.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <h1>My Cake Blog</h1>
+    <p>Life is too short to skip dessert.</p>
+  </header>
+
+  <main class="main">
+    <section class="blog-posts">
+      <h2>Latest Recipes</h2>
+      <div class="posts">
+        <article class="post">
+          <a href="post1.html">
+            <img src="https://onlinekrishnasweets.com/wp-content/uploads/2021/09/choco_blossom_2.png" alt="CC image" />
+          </a>
+          <h3>Chocolate Chip Cake</h3>
+          <p>A classic and delicious cake recipe.</p>
+        </article>
+        <article class="post">
+          <a href="post2.html">
+            <img src="https://www.expressluv.com/cdn/shop/products/c40ba0664c105f5c5e3197821a923aae99fcfb86_1000x.jpg?v=1650173536" alt="RV image" />
+          </a>
+          <h3>Red Velvet Cake</h3>
+          <p>A rich, velvety delight perfect for any occasion.</p>
+        </article>
+        <article class="post">
+          <a href="post3.html">
+            <img src="https://static.vecteezy.com/system/resources/previews/025/229/918/non_2x/freshly-baked-almond-joy-cake-on-transparent-background-png.png" alt="Al image" />
+          </a>
+          <h3>Almond Cake</h3>
+          <p>A delightful nutty cake with a perfect balance of flavors.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-me">
+      <h2>About the Baker</h2>
+      <img src="https://s1.zerochan.net/Lumine.600.3126229.jpg" alt="Your photo">
+      <p id="about">Artisan baker specializing in custom creations.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Copyright &copy; 2024 All Rights Reserved by Karthika</p>
+    <p>Contact me by</p>
+    <a href="#" class="fab fa-facebook"></a>
+    <a href="#" class="fab fa-instagram"></a>
+  </footer>
+</body>
+</html>
